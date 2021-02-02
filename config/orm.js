@@ -1,5 +1,5 @@
 const connection = require("./connection.js");
-var connction = require("./connection.js");
+var connection = require("./connection.js");
 
 var orm = {
     selectAll: function(cb) {
@@ -18,5 +18,16 @@ var orm = {
             if (err) throw err;
             cb(result);
         });
+    },
+    updateOne: function(id, cb) {
+        queryString = "UPDATE burgers SET devoured = true WHERE ";
+        queryString += "id = " + id;
+
+        connection.query(queryString, function(err, result) {
+            if (err) throw err;
+            cb(result);
+        });
     }
 }
+
+module.exports = orm;
