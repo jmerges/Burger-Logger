@@ -1,5 +1,5 @@
 # Burger-Logger
-application: https://jmerges.github.io/Portfolio/  
+application: https://mysterious-shore-23238.herokuapp.com/?burgerInput=Delicious+Burger  
 <br>
 James Merges  
 email: jamesmerges1@gmail.com  
