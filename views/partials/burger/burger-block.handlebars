@@ -1,6 +1,20 @@
 <li>
-    <p>{{id}}. {{burger_name}}</p>
     {{#unless devoured}}
-        <button class="devour-button" data-id="{{id}}">Devour Burger!</button>
+    <div class="row">
+        <div class="col-6">
+            <p>{{id}}. {{burger_name}}</p>
+        </div>
+        <div class="col-6">
+            {{#unless devoured}}
+                <button class="devour-button" data-id="{{id}}">Devour Burger!</button>
+            {{/unless}}
+        </div>
+    </div>
     {{/unless}}
+
+    {{#if devoured}}
+        <p>{{id}}. {{burger_name}}</p>
+    {{/if}}
+
+
 </li>

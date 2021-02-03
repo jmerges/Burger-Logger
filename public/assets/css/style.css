@@ -1,0 +1,11 @@
+body {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    /* background-color: lightgrey; */
+}
+li {
+    background-color: lightgrey;
+}
