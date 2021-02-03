@@ -1,5 +1,4 @@
 const connection = require("./connection.js");
-var connection = require("./connection.js");
 
 var orm = {
     selectAll: function(cb) {
@@ -12,7 +11,7 @@ var orm = {
     insertOne: function(val, cb) {
         queryString = "INSERT INTO burgers (burger_name)";
         queryString += " VALUES ";
-        queryString+= "("+val+")";
+        queryString+= "('"+val+"')";
 
         connection.query(queryString, function(err, result) {
             if (err) throw err;

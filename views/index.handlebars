@@ -1,0 +1,25 @@
+<img alt="Burger Image">
+
+<container>
+    <h1>Burger List</h1>
+    <ul id="notDevoured">Yet to be consumed
+        {{#each burger}}
+            {{#unless devoured}}
+                {{> burger/burger-block}}
+            {{/unless}}
+        {{/each}}
+    </ul>
+    <ul id="devoured">Devoured
+        {{#each burger}}
+            {{#if devoured}}
+                {{> burger/burger-block}}
+            {{/if}}
+        {{/each}}
+    </ul>
+</container>
+
+<form>
+    <label for="burgerInput">Kind of Burger:</label>
+    <input type="text" id="burgerInput" name="burgerInput">
+    <button id="submit">Submit</button>
+</form>
