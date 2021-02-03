@@ -6,6 +6,12 @@ ul {
     list-style: none;
     /* background-color: lightgrey; */
 }
+
 li {
     background-color: lightgrey;
+}
+
+img {
+    height: 200px;
+    width: auto;
 }
